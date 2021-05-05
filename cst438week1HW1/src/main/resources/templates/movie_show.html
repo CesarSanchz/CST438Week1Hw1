@@ -1,0 +1,15 @@
+	<!DOCTYPE html>
+	<html xmlns:th= "www.thymeleaf.org">
+	<head>
+	<title>Movie</title>
+	</head>
+	<body>
+		<h2 th:inline="text">Welcome, [[${movieRate.name}]]</h2>
+		<a href="/movies/new">Add Movie Rating</a><br /><br />
+		
+		Movie: <span th:inline= "text"> [[${movieRate.movieName}]]</span><br />
+		Rating: <span th:inline= "text"> [[${movieRate.rating}]]</span><br />
+		Date/Time of Posting: <span th:inline= "text"> [[${movieRate.time}]]</span><br /><br />
+		<a href="/movies">Movies Rated</a>
+	</body>
+	</html>
